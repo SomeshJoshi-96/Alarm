@@ -1,0 +1,118 @@
+/* Formatting Alarm-Clock */
+#alarm-clock {
+  position: absolute;
+  height: auto;
+  width: 500px;
+  left: 50%;
+  transform: translateX(-250px);
+  background-color: black;
+  border: 3px solid #00ff00;
+  border-radius: 4%;
+}
+
+@font-face {
+  font-family: "digital";
+  src: url("digital-7.ttf");
+}
+
+#real-time {
+  font-family: "digital";
+  font-size: 5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+}
+
+/* Formatting Set Alarm Div */
+#set-alarm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: "digital";
+  color: grey;
+  font-size: 1.5rem;
+}
+
+.setters {
+  margin-top: 2px;
+  padding: 1rem;
+}
+.setters input {
+  width: 25px;
+  height: 25px;
+  font-size: 1.7rem;
+  padding: 0.5rem;
+  font-family: "digital";
+  background-color: inherit;
+  color: grey;
+  border: 1px solid grey;
+}
+
+.setters button {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  color: grey;
+  font-size: 1.7rem;
+  background-color: inherit;
+  font-family: "digital";
+  border: 1px solid grey;
+}
+
+.setters .up:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(-4px);
+}
+
+.setters .down:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
+#set-alarm-button {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  transition: all 1s ease;
+  box-shadow: 0 0 10px white;
+}
+#set-alarm-button:hover {
+  color: #00ff00;
+  border-color: #00ff00;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+/* Formatting Alarm List */
+#alarm-title {
+  text-align: center;
+  font-family: "digital";
+  color: #00ff00;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+#alarm-list {
+  text-align: center;
+  color: #00ff00;
+  font-size: 1.7rem;
+  font-family: "digital";
+}
+
+#alarm-list button {
+  width: 40px;
+  height: 40px;
+  color: #00ff00;
+  margin-left: 80px;
+  font-size: 1.7rem;
+  background-color: inherit;
+  font-family: "digital";
+  border: none;
+  transition: all 1s ease;
+}
+
+#alarm-list button:hover {
+  color: red;
+}
